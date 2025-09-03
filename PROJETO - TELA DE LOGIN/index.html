@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script src="JS/script.js" defer></script>
+
+    <title>Tela de login</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form class="control">
+
+            <div id="titulo">
+                <h1>Tela de Login</h1>
+            </div>
+
+            <label for="email" class="label-login">Digite seu email:</label>
+            <input type="email" id="email" placeholder="exemplo@exemplo.com">
+
+            <label for="senha" class="label-senha"> Digite sua senha:</label>
+            <input type="password" id="senha">
+            <img src="IMG/olho.png" alt="Para que a senha possa ser visualizada" id="verSenha">
+
+            <button id="acesso" onclick="entrar(event)">Entrar</button>
+
+            <a href="#">Esqueci a minha senha</a>
+            <div id="login-social">
+                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&dsh=S2048771321%3A1756774716598087&ec=asw-gmail-globalnav-signin&flowEntry=AccountChooser&flowName=GlifWebSignIn&service=mail"
+                    target="_blank"><img src="IMG/google.png" alt="Faça o login com o google"></a>
+
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"> <img src="IMG/facebook.png"
+                        alt="Faça o login com o facebook">
+                </a>
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

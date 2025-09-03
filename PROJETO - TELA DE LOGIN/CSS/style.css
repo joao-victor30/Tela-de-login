@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DynaPuff"
+}
+
+body {
+    background: linear-gradient(135deg, #6a11cb, #ff6af0);
+    color: #222;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #6a11cb;
+    cursor: pointer;
+    transition: 5s;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 700px;
+    height: 500px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25), 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.control {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+#titulo {
+    margin-bottom: 1.5rem;
+}
+
+#titulo h1 {
+    font-size: 45px;
+}
+
+
+.label-login,
+.label-senha {
+    padding-bottom: .3rem;
+    margin-top: .5rem;
+}
+
+.label-senha {
+    margin-top: 1.5rem;
+
+}
+
+#email,
+#senha {
+    margin: 0 auto;
+    width: 50%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#senha {
+    margin-bottom: 2rem;
+}
+
+#email::placeholder {
+    text-align: center;
+    color: var(--placeholder-color, #c4c4c4);
+}
+
+#senha::placeholder {
+    color: var(--placeholder-color, #c4c4c4);
+    text-align: center;
+
+}
+
+
+#acesso {
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    background-color: #ff9245;
+    transition: .5s;
+}
+
+#acesso:hover {
+
+    background-color: #e65c00;
+}
+
+
+#login-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#login-social img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#login-social img:hover {
+    transform: scale(1.1);
+    border-bottom: 1px solid #000;
+}
+
+
+#verSenha {
+    position: relative;
+    width: 18px;
+    cursor: pointer;
+    left: 440px;
+    top: -53px;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        padding: 2rem;
+    }
+
+    .control {
+        padding: 1.5rem;
+    }
+
+    #email,
+    #senha {
+        width: 80%;
+    }
+
+    #titulo h1 {
+        font-size: 30px;
+    }
+
+    #acesso {
+        width: 120px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+
+    #login-social {
+        gap: 15px;
+        margin-bottom: 1rem;
+    }
+
+    #login-social img {
+        width: 35px;
+        height: 35px;
+
+    }
+
+    #verSenha {
+        display: none;
+    }
+
+
+}
