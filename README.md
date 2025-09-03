@@ -28,7 +28,3 @@ O objetivo foi criar uma tela de login simples, responsiva e colorida, apenas co
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-
----
-
-## 📂 Estrutura do projeto
